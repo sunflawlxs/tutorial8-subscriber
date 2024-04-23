@@ -25,3 +25,18 @@ Jadi, "guest:guest@localhost:5672" secara keseluruhan adalah cara untuk memberik
 
 ![alt text](assets/images/image1.png)
 Di sini, terlihat bahwa antrian mencapai 11 karena saya menjalankan cargo run sebanyak 4 kali.
+
+melakukan cargo run pada publisher dan subscriber sebanyak 2 kali
+![alt text](assets/images/image2.png)
+
+melakukan cargo run pada publisher dan subscriber sebanyak 3 kali
+![alt text](assets/images/image3.png)
+
+
+Screenshot hasil spike dari message queue berkurang yang menunjukkan peningkatan kecepatan dari sebelumnya karena request yang diterima queue dapat dibagi kepada 3 subscriber. 
+![alt text](assets/images/image4.png)
+
+code unwrap
+* Disarankan untuk menghindari penggunaan `unwrap()` karena dalam kode produksi, penggunaannya bisa menyebabkan panic jika terjadi kesalahan pada hasilnya. Lebih baik menggunakan struktur kontrol seperti `match` atau `if let` untuk menangani kesalahan ini secara lebih elegan dan terkontrol.
+
+* Selain itu, sebagai alternatif, kita bisa mendefinisikan string yang sering digunakan sebagai konstanta pada bagian awal file. Ini akan membuat kode menjadi lebih mudah dipahami, tersusun, dan menghindari pengulangan yang tidak diperlukan.
