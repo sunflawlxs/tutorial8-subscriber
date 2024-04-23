@@ -22,3 +22,6 @@ Selanjutnya, "localhost:5672" merujuk pada alamat dan port yang digunakan untuk 
 - "5672" adalah nomor port default untuk layanan AMQP. Port ini biasanya digunakan untuk mengakses dan berkomunikasi dengan broker pesan AMQP, seperti RabbitMQ.
 
 Jadi, "guest:guest@localhost:5672" secara keseluruhan adalah cara untuk memberikan kredensial (username dan password) untuk mengakses layanan AMQP yang berjalan di mesin lokal pada port defaultnya. Ini adalah contoh umum yang sering digunakan dalam konfigurasi dan pengaturan aplikasi yang berinteraksi dengan broker pesan AMQP.
+
+![alt text](assets/images/image1.png)
+Di sini, terlihat bahwa antrian mencapai 11 karena saya menjalankan cargo run sebanyak 4 kali.
